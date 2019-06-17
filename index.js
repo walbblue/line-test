@@ -10,6 +10,7 @@ var bot = linebot({
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
+    var msg = msg + '，對嗎?';
     event.reply(msg).then(function(data) {
       // success 
       console.log(msg);
